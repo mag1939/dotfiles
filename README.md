@@ -23,7 +23,7 @@ pacman -S stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/mag1939/niri-noctalia-dotfiles.git
+$ git clone git@github.com/mag1939/dotfiles.git
 $ cd dotfiles
 ```
 
