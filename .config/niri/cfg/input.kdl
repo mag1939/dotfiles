@@ -1,0 +1,45 @@
+// ────────────── Input Configuration ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
+input {
+    keyboard {
+        xkb {
+            //If you want to overwrite your keyboard layout,
+            // uncomment the line below and change the layout accordingly.
+            layout "us,th"
+
+            // OPTION A: Use a built-in XKB shortcut to switch layouts (e.g., Alt + Shift)
+            options "grp:ctrl_space_toggle"
+        }
+        numlock // Enable numlock on startup
+
+        // Optional: Control how the layout persists across windows ("global" or "window")
+        track-layout "global"
+    }
+
+    touchpad {
+        tap // Enable tap-to-click
+        natural-scroll // Enable natural (macOS-style) scrolling
+        dwt // Disable-While-Typing (prevents accidental palm clicks)
+
+        // Pointer precision & speed
+        accel-profile "flat" // Disables acceleration for 1:1 raw movement (use "adaptive" for acceleration)
+        accel-speed 0.7      // Fine-tune speed (ranges from -1.0 to 1.0)
+
+        // Modern click behavior
+        click-method "clickfinger"           // Physical click: 2 fingers = right-click, 3 fingers = middle-click
+        tap-button-map "left-right-middle"  // Tap: 2-finger tap = right-click, 3-finger tap = middle-click
+    }
+
+    mouse {
+        // If you want to disable Mouse Acceleration,
+        // uncomment the lines below.
+        accel-profile "flat"
+        accel-speed 0.0
+    }
+
+    focus-follows-mouse max-scroll-amount="0%" // Automatically focus windows under the mouse pointer
+    workspace-auto-back-and-forth // Enable workspace back & forth switching
+
+    trackpoint
+}
