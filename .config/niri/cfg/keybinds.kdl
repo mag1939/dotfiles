@@ -20,26 +20,26 @@ binds {
     Mod+W hotkey-overlay-title="Open Browser: Zen" { spawn "helium-browser"; }
     Mod+Space repeat=false { spawn "vicinae" "toggle"; }
 
-    // ========== [NOCTALIA] =============
-    Mod+Shift+W hotkey-overlay-title="Open Wallpaper Selector: noctalia wallpaper toggle" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Mod+S hotkey-overlay-title="Open Control Center: noctalia controlCenter" { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+slash hotkey-overlay-title="Open Settings: noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
-    Mod+ALT+L hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
-    Mod+X hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
-    Mod+V hotkey-overlay-title="Toggle Clipboard: noctalia clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; }
-    PRINT hotkey-overlay-title="Printscreeen Anotate: noctalia printscreen" { spawn-sh "noctalia msg screenshot-fullscreen"; }
-    
-    // ========== Media Controls =========
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
-    XF86AudioMute allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
-    XF86AudioMicMute allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
-    XF86AudioNext allow-when-locked=true { spawn-sh "noctalia msg media next"; }
-    XF86AudioPrev allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
-    XF86AudioPlay allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
-    XF86AudioPause allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
+  // ========== [DMS (Dux Shell)] =============
+      Mod+Shift+W hotkey-overlay-title="Open Wallpaper Selector: dms wallpaper" { spawn "dms" "ipc" "call" "wallpaper" "toggle"; }
+      Mod+S hotkey-overlay-title="Open Control Center: dms control-center" { spawn "dms" "ipc" "call" "control-center" "toggle"; }
+      Mod+slash hotkey-overlay-title="Open Settings: dms settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
+      Mod+ALT+L hotkey-overlay-title="Lock Screen: dms lock" { spawn "dms" "ipc" "call" "lockscreen" "lock"; }
+      Mod+X hotkey-overlay-title="Session Menu: dms session" { spawn "dms" "ipc" "call" "session" "toggle"; }
+      Mod+V hotkey-overlay-title="Toggle Clipboard: dms clipboard" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+      PRINT hotkey-overlay-title="Screenshot Fullscreen" { spawn "niri" "msg" "action" "screenshot"; }
+      
+      // ========== Media & System Controls =========
+      XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
+      XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
+      XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+      XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+      XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
+      XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+      XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+      XF86AudioPause allow-when-locked=true { spawn "playerctl" "play-pause"; }
+      XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "set" "+10%"; }
+      XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "set" "10%-"; }
 
     // Text Editor
     // Mod+Shift+E              hotkey-overlay-title="Open Text Editor: Zed" { spawn "zed"; }

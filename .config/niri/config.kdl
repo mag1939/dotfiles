@@ -1,3 +1,4 @@
+// ─── 1. Custom User Configurations (ในโฟลเดอร์ cfg) ───
 include "./cfg/animation.kdl"
 include "./cfg/autostart.kdl"
 include "./cfg/keybinds.kdl"
@@ -6,3 +7,13 @@ include "./cfg/display.kdl"
 include "./cfg/layout.kdl"
 include "./cfg/rules.kdl"
 include "./cfg/misc.kdl"
+
+// ─── 2. DMS Auto-Generated Configurations (ในโฟลเดอร์ dms) ───
+include "./dms/alttab.kdl"
+include "./dms/input.kdl"
+include "./dms/layout.kdl"
+include "./dms/windowrules.kdl"
+include "./dms/wpblur.kdl"
+
+// ─── 3. Autostart DMS Shell ───
+spawn-at-startup "dms" "run"
