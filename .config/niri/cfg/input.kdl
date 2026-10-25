@@ -23,8 +23,8 @@ input {
         dwt // Disable-While-Typing (prevents accidental palm clicks)
 
         // Pointer precision & speed
-        accel-profile "flat" // Disables acceleration for 1:1 raw movement (use "adaptive" for acceleration)
-        accel-speed 0.7      // Fine-tune speed (ranges from -1.0 to 1.0)
+        accel-profile "adaptive" // Disables acceleration for 1:1 raw movement (use "adaptive" for acceleration)
+        accel-speed 0.0      // Fine-tune speed (ranges from -1.0 to 1.0)
 
         // Modern click behavior
         click-method "clickfinger"           // Physical click: 2 fingers = right-click, 3 fingers = middle-click
