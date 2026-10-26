@@ -33,7 +33,7 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
-### Useful commands
+## Useful commands
 
 If you have a problem with conflict config files on your system with dotfiles directory using this command to "move" those files to here
 
