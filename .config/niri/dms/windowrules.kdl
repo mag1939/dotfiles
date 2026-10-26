@@ -1,0 +1,67 @@
+// DMS Window Rules - Managed by Dux Shell
+// Do not edit manually - changes may be overwritten
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    open-floating true
+}
+
+// @id=wr_1792933396794714127 @name=moe.launcher.the-honkers-railway-launcher
+window-rule {
+    match app-id="^moe.launcher.the-honkers-railway-launcher$"
+    open-maximized true
+}
+
+// @id=wr_1792933538525788813 @name=moe.launcher.an-anime-game-launcher
+window-rule {
+    match app-id="^moe.launcher.an-anime-game-launcher$"
+    open-maximized true
+}
+
+// @id=wr_1792933552717725063 @name=steam
+window-rule {
+    match app-id="^steam$"
+    open-maximized true
+}
+
+// @id=wr_1792946268522055950 @name=dev.duxlabs.shell
+window-rule {
+    match app-id="^dev.duxlabs.shell$"
+    open-maximized true
+}
+
+// @id=wr_1792956022938354469 @name=steam_proton
+window-rule {
+    match app-id="^steam_proton$"
+    open-fullscreen true
+}
+
+// @id=wr_1792957841817490111 @name=com.obsproject.Studio
+window-rule {
+    match app-id="^com.obsproject.Studio$"
+    open-maximized true
+}
+
+// @id=wr_1792984434983715278 @name=discord
+window-rule {
+    match app-id="^discord$"
+    open-maximized true
+}
+
+// @id=wr_1792985022058707294 @name=dev.duxlabs.calendar
+window-rule {
+    match app-id="^dev.duxlabs.calendar$"
+}
+
+// @id=wr_1792986844728251927 @name=helium
+window-rule {
+    match app-id="^helium$"
+    open-maximized true
+}
+
+// @id=dms-window-opaque @name=DMS Window Opaque
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    opacity 1.00
+}
