@@ -34,7 +34,7 @@ window-rule {
 // @id=wr_1792956022938354469 @name=steam_proton
 window-rule {
     match app-id="^steam_proton$"
-    open-fullscreen true
+    open-maximized-to-edges true
 }
 
 // @id=wr_1792957841817490111 @name=com.obsproject.Studio
@@ -57,6 +57,25 @@ window-rule {
 // @id=wr_1792986844728251927 @name=helium
 window-rule {
     match app-id="^helium$"
+    open-maximized true
+}
+
+// @id=wr_1793072189276107419 @name=dev.duxlabs.files
+window-rule {
+    match app-id="^dev.duxlabs.files$"
+    open-maximized true
+}
+
+// @id=wr_1793094974216412260 @name=md.obsidian.Obsidian
+window-rule {
+    match app-id="^md.obsidian.Obsidian$"
+    open-floating false
+    open-maximized true
+}
+
+// @id=wr_1793095323803541777 @name=zen
+window-rule {
+    match app-id="^zen$"
     open-maximized true
 }
 
