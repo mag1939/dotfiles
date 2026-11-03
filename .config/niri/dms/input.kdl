@@ -19,8 +19,9 @@ input {
     keyboard {
         xkb {
             layout "us,th"
-            options "grp:caps_toggle"
+            options "grp:ctrl_space_toggle"
         }
+        track-layout "window"
         numlock
     }
 }

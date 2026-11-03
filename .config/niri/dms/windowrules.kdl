@@ -34,7 +34,6 @@ window-rule {
 // @id=wr_1792956022938354469 @name=steam_proton
 window-rule {
     match app-id="^steam_proton$"
-    open-maximized-to-edges true
 }
 
 // @id=wr_1792957841817490111 @name=com.obsproject.Studio
@@ -76,6 +75,36 @@ window-rule {
 // @id=wr_1793095323803541777 @name=zen
 window-rule {
     match app-id="^zen$"
+    open-maximized true
+}
+
+// @id=wr_1793444302964209964 @name=io.github.hkdb.Aerion
+window-rule {
+    match app-id="^io.github.hkdb.Aerion$"
+    open-maximized true
+}
+
+// @id=wr_1793506260162836206 @name=Twintaillauncher
+window-rule {
+    match app-id="^Twintaillauncher$"
+    open-maximized true
+}
+
+// @id=wr_1793598015299759470 @name=ai.storyteller.vectorcraft
+window-rule {
+    match app-id="^ai.storyteller.vectorcraft$"
+    open-maximized true
+}
+
+// @id=wr_1793674708053408798 @name=com.shellyorg.shelly
+window-rule {
+    match app-id="^com.shellyorg.shelly$"
+    open-maximized true
+}
+
+// @id=wr_1793674959252273912 @name=brave-origin
+window-rule {
+    match app-id="^brave-origin$"
     open-maximized true
 }
 

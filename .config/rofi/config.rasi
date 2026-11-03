@@ -1,9 +1,10 @@
 configuration {
 	display-drun: "Applications:";
+	display-calc: "Calculator:";
 	display-window: "Windows:";
+	display-emoji: "Emoji:";
 	drun-display-format: "{icon} {name}";
-	font: "JetBrainsMono Nerd Font Medium 13";
-	modi: "drun,emoji,calc";
+	modi: "drun,emoji,calc,window";
 	show-icons: true;
 	icon-theme: "Papirus";
   calc {
@@ -13,7 +14,7 @@ configuration {
         no-persist-history: false;
         automatic-save-to-history: true;
         calc-command-history: true;
-        calc-command: "echo -n '{result}' | wl-copy"; 
+        calc-command: "echo -n '{result}' | wl-copy";
         calc-error-color: "Green";
         hint-result: "Result: ";
         hint-welcome: "";
@@ -23,9 +24,9 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #1e1e2e66;
-  bg-alt: #585b7066;
-  bg-selected: #31324466;
+  bg: #1e1e2e;
+  bg-alt: #585b70;
+  bg-selected: #313244;
 
   fg: #cdd6f4;
   fg-alt: #7f849c;
@@ -41,8 +42,6 @@ window {
   width: 45%;
   background-color: @bg;
   border-radius: 8px;
-  border: 2px;
-  border-color: #cdd6f4;
 }
 
 element {

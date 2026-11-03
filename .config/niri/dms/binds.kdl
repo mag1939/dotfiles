@@ -1,6 +1,5 @@
 binds {
     Alt+Print hotkey-overlay-title="quickCapture screenshot: window" { spawn "sh" "-c" "dms ipc call quickCapture screenshot window edit"; }
-    Alt+Space hotkey-overlay-title="Spotlight Bar" { spawn "dms" "ipc" "call" "spotlight-bar" "toggle"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Ctrl+Alt+M hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Ctrl+Print hotkey-overlay-title="quickCapture screenshot: full" { spawn "sh" "-c" "dms ipc call quickCapture screenshot full edit"; }
@@ -11,6 +10,7 @@ binds {
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Alt+N hotkey-overlay-title="Night Mode" { spawn "dms" "ipc" "call" "night" "toggle"; }
     Mod+Alt+R hotkey-overlay-title="Rename Workspace" { spawn "dms" "ipc" "call" "workspace-rename" "open"; }
+    Mod+B hotkey-overlay-title="Default Web Browser: Open" repeat=false { spawn "dms" "ipc" "call" "defaultApp" "browser"; }
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
     Mod+Ctrl+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+D hotkey-overlay-title="Dash" { spawn "dms" "ipc" "call" "dash" "toggle" ""; }
@@ -23,7 +23,6 @@ binds {
     Mod+Shift+Slash hotkey-overlay-title="Keyboard Shortcuts" { spawn "dms" "ipc" "call" "keybinds" "toggle" "niri"; }
     Mod+Shift+W hotkey-overlay-title="Create window rule" { spawn "dms" "ipc" "call" "window-rules" "toggle"; }
     Mod+V repeat=false hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Mod+W repeat=false hotkey-overlay-title="Default Web Browser: Open" { spawn "dms" "ipc" "call" "defaultApp" "browser"; }
     Mod+X repeat=false hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dash" "toggle" "wallpaper"; }
     Print hotkey-overlay-title="quickCapture screenshot: region" { spawn "sh" "-c" "dms ipc call quickCapture screenshot region edit"; }
@@ -131,7 +130,6 @@ binds {
     Mod+Period repeat=false hotkey-overlay-title="rofi emoji picker" { spawn "sh" "-c" "pgrep -x rofi && pkill -x rofi || rofi -show emoji"; }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+Space repeat=false hotkey-overlay-title="open \"rofi\"  launcher " { spawn "sh" "-c" "pgrep -x rofi && pkill -x rofi || rofi -show drun"; }
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     XF86TouchpadToggle repeat=false allow-when-locked=true { spawn "niri" "msg" "action" "toggle-touchpad"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+O repeat=false { toggle-overview; }
