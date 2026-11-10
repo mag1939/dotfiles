@@ -3,10 +3,9 @@
   "logo": {
     "type": "kitty",
     "source": "/home/mag/Pictures/towa-ascii-art.png",
-    "width": 48,
+    "width": 30,
     "padding": {
-      "left": 2,
-      "top": 2
+      "top": 5,
     }
   },
   "modules": [
@@ -87,7 +86,7 @@
     {
       "type": "disk",
       "key": " 󰋊 SSD2",
-      "folders": "/mnt/SSD2",
+      "folders": "/mnt",
       "keyColor": "#bb389b"
     },
     {

@@ -7,14 +7,15 @@ input {
     focus-follows-mouse max-scroll-amount="0%"
     mouse {
         accel-speed 0.0
+        scroll-factor 2.0
     }
     touchpad {
         tap
-        accel-speed 0.0
-        accel-profile "adaptive"
+        accel-speed 0.2
         natural-scroll
         disabled-on-external-mouse
         dwt
+        scroll-factor 1.2
     }
     keyboard {
         xkb {

@@ -1,110 +1,45 @@
-// DMS Window Rules - Managed by Dux Shell
+// DMS Window Rules - Managed by Dux Modular Shell
 // Do not edit manually - changes may be overwritten
 
-// @id=dms-floating-windows @name=DMS Floating Windows
-window-rule {
-    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
-    open-floating true
-}
-
-// @id=wr_1792933396794714127 @name=moe.launcher.the-honkers-railway-launcher
-window-rule {
-    match app-id="^moe.launcher.the-honkers-railway-launcher$"
-    open-maximized true
-}
-
-// @id=wr_1792933538525788813 @name=moe.launcher.an-anime-game-launcher
-window-rule {
-    match app-id="^moe.launcher.an-anime-game-launcher$"
-    open-maximized true
-}
-
-// @id=wr_1792933552717725063 @name=steam
-window-rule {
-    match app-id="^steam$"
-    open-maximized true
-}
-
-// @id=wr_1792946268522055950 @name=dev.duxlabs.shell
-window-rule {
-    match app-id="^dev.duxlabs.shell$"
-    open-maximized true
-}
-
-// @id=wr_1792956022938354469 @name=steam_proton
-window-rule {
-    match app-id="^steam_proton$"
-}
-
-// @id=wr_1792957841817490111 @name=com.obsproject.Studio
-window-rule {
-    match app-id="^com.obsproject.Studio$"
-    open-maximized true
-}
-
-// @id=wr_1792984434983715278 @name=discord
-window-rule {
-    match app-id="^discord$"
-    open-maximized true
-}
-
-// @id=wr_1792985022058707294 @name=dev.duxlabs.calendar
-window-rule {
-    match app-id="^dev.duxlabs.calendar$"
-}
-
-// @id=wr_1792986844728251927 @name=helium
-window-rule {
-    match app-id="^helium$"
-    open-maximized true
-}
-
-// @id=wr_1793072189276107419 @name=dev.duxlabs.files
-window-rule {
-    match app-id="^dev.duxlabs.files$"
-    open-maximized true
-}
-
-// @id=wr_1793094974216412260 @name=md.obsidian.Obsidian
-window-rule {
-    match app-id="^md.obsidian.Obsidian$"
-    open-floating false
-    open-maximized true
-}
-
-// @id=wr_1793095323803541777 @name=zen
+// @id=wr_1794022635501877589 @name=zen
 window-rule {
     match app-id="^zen$"
     open-maximized true
 }
 
-// @id=wr_1793444302964209964 @name=io.github.hkdb.Aerion
+// @id=wr_1794022682537797009 @name=com.getmailspring.Mailspring
 window-rule {
-    match app-id="^io.github.hkdb.Aerion$"
+    match app-id="^com.getmailspring.Mailspring$"
     open-maximized true
 }
 
-// @id=wr_1793506260162836206 @name=Twintaillauncher
-window-rule {
-    match app-id="^Twintaillauncher$"
-    open-maximized true
-}
-
-// @id=wr_1793598015299759470 @name=ai.storyteller.vectorcraft
-window-rule {
-    match app-id="^ai.storyteller.vectorcraft$"
-    open-maximized true
-}
-
-// @id=wr_1793674708053408798 @name=com.shellyorg.shelly
+// @id=wr_1794027437016150265 @name=com.shellyorg.shelly
 window-rule {
     match app-id="^com.shellyorg.shelly$"
     open-maximized true
 }
 
-// @id=wr_1793674959252273912 @name=brave-origin
+// @id=wr_1794035036893141302 @name=steam_app_3353360764
 window-rule {
-    match app-id="^brave-origin$"
+    match app-id="^steam_app_3353360764$"
+    open-fullscreen true
+}
+
+// @id=wr_1794039669996809391 @name=discord
+window-rule {
+    match app-id="^discord$"
+    open-maximized true
+}
+
+// @id=wr_1794109559259427437 @name=ai.storyteller.filmcraft
+window-rule {
+    match app-id="^ai.storyteller.filmcraft$"
+    open-maximized true
+}
+
+// @id=wr_1794278978490022543 @name=Twintaillauncher
+window-rule {
+    match app-id="^Twintaillauncher$"
     open-maximized true
 }
 
