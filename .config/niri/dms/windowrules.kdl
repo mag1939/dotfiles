@@ -22,7 +22,7 @@ window-rule {
 // @id=wr_1794035036893141302 @name=steam_app_3353360764
 window-rule {
     match app-id="^steam_app_3353360764$"
-    open-fullscreen true
+    open-maximized true
 }
 
 // @id=wr_1794039669996809391 @name=discord
@@ -41,6 +41,36 @@ window-rule {
 window-rule {
     match app-id="^Twintaillauncher$"
     open-maximized true
+}
+
+// @id=wr_1794540114723276379 @name=brave-origin
+window-rule {
+    match app-id="^brave-origin$"
+    open-maximized true
+}
+
+// @id=wr_1794586768247935447 @name=twintaillauncher
+window-rule {
+    match app-id="^twintaillauncher$"
+    open-maximized true
+}
+
+// @id=wr_1794666145818379396 @name=steam_proton
+window-rule {
+    match app-id="^steam_proton$"
+    open-maximized true
+}
+
+// @id=wr_1794758073456471698 @name=dev.duxlabs.files
+window-rule {
+    match app-id="^dev.duxlabs.files$"
+    open-maximized true
+}
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    open-floating true
 }
 
 // @id=dms-window-opaque @name=DMS Window Opaque
