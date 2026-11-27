@@ -8,16 +8,15 @@ binds {
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Alt+N hotkey-overlay-title="Night Mode" { spawn "dms" "ipc" "call" "night" "toggle"; }
     Mod+Alt+R hotkey-overlay-title="Rename Workspace" { spawn "dms" "ipc" "call" "workspace-rename" "open"; }
-    Mod+B repeat=false hotkey-overlay-title="Default Web Browser: Open" { spawn "dms" "ipc" "call" "defaultApp" "browser"; }
+    Mod+B hotkey-overlay-title="Default Web Browser: Open" repeat=false { spawn "dms" "ipc" "call" "defaultApp" "browser"; }
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
     Mod+Ctrl+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+D hotkey-overlay-title="Dash" { spawn "dms" "ipc" "call" "dash" "toggle" ""; }
-    Mod+E hotkey-overlay-title="Default File Manager: Open" repeat=false { spawn "dms" "ipc" "call" "defaultApp" "fileManager"; }
     Mod+M hotkey-overlay-title="Media" { spawn "dms" "ipc" "call" "dash" "toggle" "media"; }
     Mod+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     Mod+P allow-when-locked=true hotkey-overlay-title="Cycle Display Profile" { spawn "dms" "ipc" "outputs" "cycleProfile"; }
     Mod+Period repeat=false hotkey-overlay-title="emojiPicker toggle" { spawn "dms" "ipc" "call" "emojiPicker" "toggle"; }
-    Mod+Print hotkey-overlay-title="quickCapture \"Record Portal\"" repeat=false { spawn "dms" "ipc" "call" "quickCapture" "recordStart" "portal" ""; }
+    Mod+Print repeat=false { spawn "dms" "ipc" "call" "quickCapture" "recordStart" "portal"; }
     Mod+Shift+C hotkey-overlay-title="Color Picker" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad: Expand" { spawn "dms" "ipc" "call" "notepad" "toggleExpand"; }
     Mod+Shift+Slash hotkey-overlay-title="Keyboard Shortcuts" { spawn "dms" "ipc" "call" "keybinds" "toggle" "niri"; }
@@ -25,7 +24,6 @@ binds {
     Mod+V repeat=false hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+X repeat=false hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dash" "toggle" "wallpaper"; }
-    Mod+space repeat=false hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Print hotkey-overlay-title="quickCapture screenshot: region" { spawn "sh" "-c" "dms ipc call quickCapture screenshot region edit"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
     XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
@@ -127,7 +125,9 @@ binds {
     Mod+WheelScrollRight { focus-column-right; }
     Mod+Shift+P { power-off-monitors; }
     Mod+Shift+E { quit; }
+    Mod+E repeat=false hotkey-overlay-title="Luciole File Mananger: open" { spawn "luciole"; }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Mod+space hotkey-overlay-title="vicinae toggle" repeat=false { spawn "vicinae" "toggle"; }
     XF86TouchpadToggle repeat=false allow-when-locked=true { spawn "niri" "msg" "action" "toggle-touchpad"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+O repeat=false { toggle-overview; }

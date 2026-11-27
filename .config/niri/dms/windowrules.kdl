@@ -64,13 +64,23 @@ window-rule {
 // @id=wr_1794758073456471698 @name=dev.duxlabs.files
 window-rule {
     match app-id="^dev.duxlabs.files$"
-    open-maximized true
 }
 
 // @id=dms-floating-windows @name=DMS Floating Windows
 window-rule {
     match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
     open-floating true
+}
+
+// @id=wr_1795575852359055414 @name=firefox
+window-rule {
+    match app-id="^firefox$"
+    open-maximized true
+}
+
+// @id=wr_1795722242688349031 @name=zenlesszonezero.exe
+window-rule {
+    match app-id="^zenlesszonezero.exe$"
 }
 
 // @id=dms-window-opaque @name=DMS Window Opaque

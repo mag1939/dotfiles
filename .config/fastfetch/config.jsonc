@@ -86,7 +86,7 @@
     {
       "type": "disk",
       "key": " 󰋊 SSD2",
-      "folders": "/mnt",
+      "folders": "/mnt/ssd2",
       "keyColor": "#bb389b"
     },
     {
